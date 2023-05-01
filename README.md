@@ -1,7 +1,8 @@
 # Wordle-Clone
 ## Description
  A clone of the game by the same name.
-## Important Disclaimer: You will need your own WordsAPI Key!
+## Important Disclaimer: 
+-You will need your own WordsAPI Key!
 ### [API Location](https://rapidapi.com/dpventures/api/wordsapi/) 
 ### How-To-Use
 - Guess a 5 letter word.
