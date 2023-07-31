@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   createSquares();
-  getNewWord();
+  getNewWord(); 
 
   let guessedWords = [[]];
   let availableSpace = 1;
