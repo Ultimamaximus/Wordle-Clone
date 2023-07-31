@@ -105,3 +105,28 @@ header {
 .spacer-half {
   flex-grow: 0.5;
 }
+
+@media (max-width: 768px) {
+  #game {
+    max-width: 100%;  /* Allow the game to use full width on small screens */
+  }
+
+  .title {
+    font-size: 1.8rem;  /* Reduce the title font size on small screens */
+  }
+
+  .square {
+    width: 40px;  /* Reduce square size */
+    height: 40px;
+    font-size: 30px;
+  }
+
+  #keyboard-container {
+    height: 150px;  /* Reduce keyboard height */
+  }
+
+  .keyboard-row button {
+    height: 38px;  /* Reduce button height */
+  }
+}
+
