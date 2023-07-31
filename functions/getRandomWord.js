@@ -4,13 +4,17 @@ exports.handler = async function(event, context) {
   const API_KEY = process.env.API_KEY;
   const API_HOST = 'wordsapiv1.p.rapidapi.com';
 
+  const options = {
+    method: 'GET',
+    url: 'https://wordsapiv1.p.rapidapi.com/words/?random=true&lettersMin=5&lettersMax=5',
+    headers: {
+      'X-RapidAPI-Key': API_KEY,
+      'X-RapidAPI-Host': API_HOST
+    }
+  };
+
   try {
-    const response = await axios.get(`https://wordsapiv1.p.rapidapi.com/words/?random=true&lettersMin=5&lettersMax=5`, {
-      headers: {
-        'x-rapidapi-key': API_KEY,
-        'x-rapidapi-host': API_HOST
-      }
-    });
+    const response = await axios.request(options);
 
     return {
       statusCode: 200,
