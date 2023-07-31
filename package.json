@@ -1,0 +1,14 @@
+{
+  "name": "wordle-clone",
+  "version": "1.0.0",
+  "description": "Welcome to my Wordle clone! This project is a recreation of the popular online game where the goal is to guess a 5-letter word within 6 attempts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
